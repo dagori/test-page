@@ -1,0 +1,88 @@
+.navigation {
+  $navigation-top-padding: 50px !global;
+  padding-top: $navigation-top-padding;
+  padding-bottom: 90px;
+  position: relative;
+  align-self: center;
+}
+
+.navigation__button {
+  $button-height: 120px !global;
+  $button-width: 128px !global;
+  width: $button-width;
+  height:   $button-height;
+  background: none;
+  border: 3px solid $white-color;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 0;
+    width: 40px;
+    height: 3px;
+    background-color: $white-color;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: $white-color;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background-color: $white-color;
+    }
+  }
+}
+
+.navigation:hover > .navigation__button {
+  border: 3px solid transparent;
+  background-color: $light-orange-color;
+  span {
+    visibility: hidden;
+    transform: visibility .3s;
+    &::before {
+      visibility: visible;
+      transform: translateY(8px) rotate(45deg);
+      transform-origin: center;
+      transition: transform .3s;
+    }
+    &::after {
+      visibility: visible;
+      transform: translateY(-8px) rotate(-45deg);
+      transform-origin: center;
+      transition: transform .3s;
+    }
+  }
+}
+
+.navigation:hover > .navigation__list {
+  background-color: $light-orange-color;
+  display: flex;
+}
+
+.navigation__list {
+  position: absolute;
+  top: $navigation-top-padding;
+  left: -680px;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 680px;
+  height: $button-height;
+  z-index: 10;
+  background-color: $light-orange-color;
+  a {
+    font-size: 16px;
+    line-height: 25px;
+    color: $white-color;
+    text-transform: uppercase;
+  }
+}

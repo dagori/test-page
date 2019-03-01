@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: $green-color;
+  @extend %diagonal;
+}
+
+
+.contacts {
+  display: flex;
+  @include font-info;
+  a {
+    @include font-info;
+  }
+  &__address {
+    width: 40%;
+    text-align: left;
+    padding-left: 60px;
+  }
+  &__link {
+    width: 50%;
+    padding-top: 110px;
+    margin-left: -50px;
+  }
+}

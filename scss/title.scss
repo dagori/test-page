@@ -1,0 +1,17 @@
+.title {
+  margin-left: auto;
+  background-color: $light-grey-color;
+  background-image: url('../images/header-armchairs.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 165px;
+  padding-top: 50px;
+}
+
+.logo__text {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 100px;
+}

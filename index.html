@@ -5,113 +5,109 @@
     <meta name="viewport" content="width=device-width">
     <title>Test</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" as="font" type="font/woff2">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" as="font" type="font/woff2">
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="block block--large title">
-          <div class="logo">
-            <img src="images/logo.png" width="162" height="207" alt="DSGN" class="logo__image">
-            <div class="logo__text">ASSOCIATES STUDIO DESIGN</div>
-          </div>
-          <ul class="social-icon">
-            <li class="social-icon__item social-icon__item--facebook">
-              <a href="#" title="Facebook"></a>
-            </li>
-            <li class="social-icon__item social-icon__item--twitter">
-              <a href="#" title="Twitter"></a>
-            </li>
-            <li class="social-icon__item social-icon__item--instagram">
-              <a href="#" title="Instagram"></a>
-            </li>
-            <li class="social-icon__item social-icon__item--google-plus">
-              <a href="#" title="Google Plus"></a>
-            </li>
+    <header>
+      <section class="block block--large title">
+        <div class="logo">
+          <img src="images/logo.png" width="162" height="207" alt="DSGN" class="logo__image">
+          <div class="logo__text">ASSOCIATES STUDIO DESIGN</div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item social-icon__item--facebook">
+            <a href="#" title="Facebook"></a>
+          </li>
+          <li class="social-icon__item social-icon__item--twitter">
+            <a href="#" title="Twitter"></a>
+          </li>
+          <li class="social-icon__item social-icon__item--instagram">
+            <a href="#" title="Instagram"></a>
+          </li>
+          <li class="social-icon__item social-icon__item--google-plus">
+            <a href="#" title="Google Plus"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="block block--small info">
+        <nav class="navigation">
+          <button name="menu" class="navigation__button" type="button"><span>Menu</span></button>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#">Home</a></li>
+            <li class="navigation__item"><a href="#">Projects</a></li>
+            <li class="navigation__item"><a href="#">Studio</a></li>
+            <li class="navigation__item"><a href="#">News</a></li>
+            <li class="navigation__item"><a href="#">Contact</a></li>
           </ul>
-        </div>
-        <div class="block block--small info diagonal">
-          <nav class="navigation">
-            <button name="menu" class="navigation__button" type="button"><span>Menu</span></button>
-            <ul class="navigation__list">
-              <li class="navigation__item"><a href="#">Home</a></li>
-              <li class="navigation__item"><a href="#">Projects</a></li>
-              <li class="navigation__item"><a href="#">Studio</a></li>
-              <li class="navigation__item"><a href="#">News</a></li>
-              <li class="navigation__item"><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <address class="contacts">
-            <span class="contacts__address">90802 California<br>Long beach<br>PO Box 68789<br>300 East Ocean<br>Boulevard</span>
-            <div class="contacts__link">
-              <a href="tel:+6493456758">+6493456758</a><br>
-              <a href="mailto:info@dsgn-studio.co">info@dsgn-studio.com</a>
-            </div>
-          </address>
-        </div>
-      </header>
-      <main>
-        <div class="block block--small sort diagonal">
-          <h2 class="sort__title">Projects</h2>
-          <form class="sort__sorting">
-            <input id="all" type="radio" name="selected-project" value="all" checked>
-            <label for="all">All</label>
-
-            <input id="house" type="radio" name="selected-project" value="house">
-            <label for="house">House</label>
-
-            <input id="Commercial" type="radio" name="selected-project" value="Commercial">
-            <label for="Commercial">Commercial</label>
-
-            <input id="Personal" type="radio" name="selected-project" value="Personal">
-            <label for="Personal">Personal</label>
-
-            <input id="Studio Lab" type="radio" name="selected-project" value="Studio Lab">
-            <label for="Studio Lab">Studio Lab</label>
-          </form>
-        </div>
-        <section class="block block--large project-container">
-          <article class="block block--middle  project-card project-card--fondue">
-            <div class="project-card__inner-container">
-              <h3 class="project-card__title">FONDUE</h3>
-              <div class="project-card__info">
-                <span><b>Project Assistant:</b> Francesco Dompieri</span>
-                <span><b>Material:</b> Glass and Metal</span>
-                <span><b>Typology:</b> Suspension lamp</span>
-                <span><b>Client:</b> David Design</span>
-                <span><b>Year:</b> 2014</span>
-              </div>
-              <a class="project-card__detail" href="#">View project</a>
-              <button type="button" class="project-card__like"></button>
-            </div>
-          </article>
-          <div class="block block--small project-container__layout">
-            <article class="block block--small block--slim project-card project-card--potter">
-              <div class="project-card__inner-container">
-                <h3 class="project-card__title">Potter</h3>
-                <div class="project-card__info">
-                  <span><b>FOR</b> STELTON</span>
-                  <span>Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.</span>
-                </div>
-                <a class="project-card__detail" href="#">View project</a>
-                <button type="button" class="project-card__like"></button>
-              </div>
-            </article>
-            <article class="block block--small block--slim project-card project-card--fiji">
-              <div class="project-card__inner-container">
-                <h3 class="project-card__title">FIJI</h3>
-                <div class="project-card__info">
-                  <span><b>Designer:</b> Cuno Frommherz</span>
-                  <span><b>Typology:</b> Armchairs</span>
-                  <span><b>Year:</b> 2012</span>
-                </div>
-                <a class="project-card__detail" href="#">View project</a>
-                <button type="button" class="project-card__like"></button>
-              </div>
-            </article>
+        </nav>
+        <address class="contacts">
+          <span class="contacts__address">90802 California<br>Long beach<br>PO Box 68789<br>300 East Ocean<br>Boulevard</span>
+          <div class="contacts__link">
+            <a href="tel:+6493456758">+6493456758</a><br>
+            <a href="mailto:info@dsgn-studio.co">info@dsgn-studio.com</a>
           </div>
-        </section>
-      </main>
-    </div>
+        </address>
+      </section>
+    </header>
+    <main>
+      <section class="block block--small sort">
+        <h2 class="sort__title">Projects</h2>
+        <form class="sort__sorting">
+          <input id="all" type="radio" name="selected-project" value="all" checked>
+          <label for="all">All</label>
+
+          <input id="house" type="radio" name="selected-project" value="house">
+          <label for="house">House</label>
+
+          <input id="Commercial" type="radio" name="selected-project" value="Commercial">
+          <label for="Commercial">Commercial</label>
+
+          <input id="Personal" type="radio" name="selected-project" value="Personal">
+          <label for="Personal">Personal</label>
+
+          <input id="Studio_Lab" type="radio" name="selected-project" value="Studio Lab">
+          <label for="Studio_Lab">Studio Lab</label>
+        </form>
+      </section>
+      <section class="block block--large project-container">
+        <article class="block block--middle  project-card project-card--fondue">
+          <div class="project-card__inner-container">
+            <h3 class="project-card__title">FONDUE</h3>
+            <div class="project-card__info">
+              <span><b>Project Assistant:</b> Francesco Dompieri</span>
+              <span><b>Material:</b> Glass and Metal</span>
+              <span><b>Typology:</b> Suspension lamp</span>
+              <span><b>Client:</b> David Design</span>
+              <span><b>Year:</b> 2014</span>
+            </div>
+            <a class="project-card__detail" href="#">View project</a>
+            <button type="button" class="project-card__like"></button>
+          </div>
+        </article>
+        <article class="block block--small block--slim project-card project-card--potter">
+          <div class="project-card__inner-container">
+            <h3 class="project-card__title">Potter</h3>
+            <div class="project-card__info">
+              <span><b>FOR</b> STELTON</span>
+              <span>Potter focuses on the functionality and process of preparing tea. A big sieve allows the flavor of to evenly brewed.</span>
+            </div>
+            <a class="project-card__detail" href="#">View project</a>
+            <button type="button" class="project-card__like"></button>
+          </div>
+        </article>
+        <article class="block block--small block--slim project-card project-card--fiji">
+          <div class="project-card__inner-container">
+            <h3 class="project-card__title">FIJI</h3>
+            <div class="project-card__info">
+              <span><b>Designer:</b> Cuno Frommherz</span>
+              <span><b>Typology:</b> Armchairs</span>
+              <span><b>Year:</b> 2012</span>
+            </div>
+            <a class="project-card__detail" href="#">View project</a>
+            <button type="button" class="project-card__like"></button>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

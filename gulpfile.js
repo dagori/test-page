@@ -24,7 +24,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('sass', function () {
-  gulp.src('*.scss')
+  gulp.src('scss/style.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -36,7 +36,7 @@ gulp.task('sass', function () {
 
 gulp.task('watcher', function() {
   gulp.watch('*.html', ['html']);
-  gulp.watch('*.scss', ['sass']);
+  gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('*/*.js', ['js']);
 });
 
