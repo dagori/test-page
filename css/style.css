@@ -18,22 +18,32 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  background: #ffffff;
+  background-color: #ffffff; }
+
+.page-container {
+  max-width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-
-header, main {
-  max-width: 1500px;
-  height: 50%;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin: 0 auto;
+  background-color: Aquamarine; }
+
+header {
+  height: 500px; }
+
+main {
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +77,6 @@ h1, h2, h3, ul, li, a {
     min-height: 250px; }
 
 .title {
-  margin-left: auto;
   background-color: #e9eae2;
   background-image: url("../images/header-armchairs.png");
   background-repeat: no-repeat;
@@ -191,9 +200,9 @@ h1, h2, h3, ul, li, a {
   border: 3px solid transparent;
   background-color: #f8c255; }
   .navigation:hover > .navigation__button span {
-    visibility: hidden;
-    -webkit-transform: visibility .3s;
-            transform: visibility .3s; }
+    background-color: #f8c255;
+    -webkit-transform: background-color .3s;
+            transform: background-color .3s; }
     .navigation:hover > .navigation__button span::before {
       visibility: visible;
       -webkit-transform: translateY(8px) rotate(45deg);
@@ -249,8 +258,7 @@ h1, h2, h3, ul, li, a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ebb240;
-  margin-left: auto; }
+  background-color: #ebb240; }
 
 .sort__title {
   -webkit-box-ordinal-group: 3;
@@ -413,7 +421,9 @@ h1, h2, h3, ul, li, a {
   background-image: url("../images/lamp.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  max-width: 570px;
+  min-width: 465px; }
   .project-card--fondue .project-card__inner-container {
     width: 225px;
     margin-left: 100px; }

@@ -8,8 +8,8 @@
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" as="font" type="font/woff2">
   </head>
   <body>
-    <header>
-      <section class="block block--large title">
+    <div class="page-container">
+      <header class="block block--large title">
         <div class="logo">
           <img src="images/logo.png" width="162" height="207" alt="DSGN" class="logo__image">
           <div class="logo__text">ASSOCIATES STUDIO DESIGN</div>
@@ -28,7 +28,7 @@
             <a href="#" title="Google Plus"></a>
           </li>
         </ul>
-      </section>
+      </header>
       <section class="block block--small info">
         <nav class="navigation">
           <button name="menu" class="navigation__button" type="button"><span>Menu</span></button>
@@ -48,8 +48,6 @@
           </div>
         </address>
       </section>
-    </header>
-    <main>
       <section class="block block--small sort">
         <h2 class="sort__title">Projects</h2>
         <form class="sort__sorting">
@@ -69,45 +67,48 @@
           <label for="Studio_Lab">Studio Lab</label>
         </form>
       </section>
-      <section class="block block--large project-container">
-        <article class="block block--middle  project-card project-card--fondue">
-          <div class="project-card__inner-container">
-            <h3 class="project-card__title">FONDUE</h3>
-            <div class="project-card__info">
-              <span><b>Project Assistant:</b> Francesco Dompieri</span>
-              <span><b>Material:</b> Glass and Metal</span>
-              <span><b>Typology:</b> Suspension lamp</span>
-              <span><b>Client:</b> David Design</span>
-              <span><b>Year:</b> 2014</span>
+      <main>
+
+        <section class="block block--large project-container">
+          <article class="block block--middle  project-card project-card--fondue">
+            <div class="project-card__inner-container">
+              <h3 class="project-card__title">FONDUE</h3>
+              <div class="project-card__info">
+                <span><b>Project Assistant:</b> Francesco Dompieri</span>
+                <span><b>Material:</b> Glass and Metal</span>
+                <span><b>Typology:</b> Suspension lamp</span>
+                <span><b>Client:</b> David Design</span>
+                <span><b>Year:</b> 2014</span>
+              </div>
+              <a class="project-card__detail" href="#">View project</a>
+              <button type="button" class="project-card__like"></button>
             </div>
-            <a class="project-card__detail" href="#">View project</a>
-            <button type="button" class="project-card__like"></button>
-          </div>
-        </article>
-        <article class="block block--small block--slim project-card project-card--potter">
-          <div class="project-card__inner-container">
-            <h3 class="project-card__title">Potter</h3>
-            <div class="project-card__info">
-              <span><b>FOR</b> STELTON</span>
-              <span>Potter focuses on the functionality and process of preparing tea. A big sieve allows the flavor of to evenly brewed.</span>
+          </article>
+          <article class="block block--small block--slim project-card project-card--potter">
+            <div class="project-card__inner-container">
+              <h3 class="project-card__title">Potter</h3>
+              <div class="project-card__info">
+                <span><b>FOR</b> STELTON</span>
+                <span>Potter focuses on the functionality and process of preparing tea. A big sieve allows the flavor of to evenly brewed.</span>
+              </div>
+              <a class="project-card__detail" href="#">View project</a>
+              <button type="button" class="project-card__like"></button>
             </div>
-            <a class="project-card__detail" href="#">View project</a>
-            <button type="button" class="project-card__like"></button>
-          </div>
-        </article>
-        <article class="block block--small block--slim project-card project-card--fiji">
-          <div class="project-card__inner-container">
-            <h3 class="project-card__title">FIJI</h3>
-            <div class="project-card__info">
-              <span><b>Designer:</b> Cuno Frommherz</span>
-              <span><b>Typology:</b> Armchairs</span>
-              <span><b>Year:</b> 2012</span>
+          </article>
+          <article class="block block--small block--slim project-card project-card--fiji">
+            <div class="project-card__inner-container">
+              <h3 class="project-card__title">FIJI</h3>
+              <div class="project-card__info">
+                <span><b>Designer:</b> Cuno Frommherz</span>
+                <span><b>Typology:</b> Armchairs</span>
+                <span><b>Year:</b> 2012</span>
+              </div>
+              <a class="project-card__detail" href="#">View project</a>
+              <button type="button" class="project-card__like"></button>
             </div>
-            <a class="project-card__detail" href="#">View project</a>
-            <button type="button" class="project-card__like"></button>
-          </div>
-        </article>
-      </section>
-    </main>
+          </article>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

@@ -67,6 +67,8 @@
   background-color: $white-color;
   background-image: url('../images/lamp.png');
   @include background-image-parameter;
+  max-width: $middle-width;
+  min-width: $small-width;
   .project-card__inner-container {
     width: 225px;
     margin-left: 100px;

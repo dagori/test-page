@@ -3,16 +3,30 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  background: $white-color;;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: $white-color;
 }
 
-header, main {
+@media #{$max-width} {
+
+}
+
+.page-container {
   max-width: 1500px;
-  height: 50%; //vh
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   margin: 0 auto;
+  background-color: Aquamarine;
+}
+
+header {
+  height: 500px;
+}
+
+main {
+  height: 50%; //vh
   display: flex;
   flex-direction: row;
   justify-content: center;
