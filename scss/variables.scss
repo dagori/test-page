@@ -6,6 +6,7 @@ $green-color: #7acec3;
 $white-color: #ffffff;
 $black-color: #000000;
 
+$layout-width: 1500px;
 $large-width: 1035px;
 $middle-width: 570px;
 $small-width: 465px;
@@ -13,8 +14,9 @@ $small-width: 465px;
 $large-height: 500px;
 $small-height: 250px;
 
-$min-width: 1500px;
-$max-width: 1490px;
+$tablet-width: (max-width: $layout-width - 1);
+$mobile-width: (max-width: $large-width - 1);
+
 /*
 .container {
   width: 1500px;
@@ -25,62 +27,3 @@ $max-width: 1490px;
 //31% - 38% - 31% (465 -570 - 465)
 
 // 500|250 */
-
-%diagonal {
-  background-image: url('../images/line.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@mixin font-info {
-  font-size: 13px;
-  line-height: 14px;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: uppercase;
-  color: $white-color;
-}
-
-@mixin background-image-parameter {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-@mixin project-card-detail-font {
-  font-size: 18px;
-  line-height: 12px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $black-color;
-}
-
-@mixin project-card-title-font {
-  font-size: 24px;
-  line-height: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $black-color;
-}
-
-@mixin arrow-before($color) {
-  content: '';
-  position: absolute;
-  width: 19px;
-  height: 1px;
-  background-color: $color;
-  left: -29px;
-  top: 5px;
-}
-
-@mixin arrow-after($color) {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-bottom: 1px solid $color;
-  border-right: 1px solid $color;
-  top: 1px;
-  left: -20px;
-  transform: rotate(-45deg);
-}

@@ -17,11 +17,12 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background-color: #ffffff; }
 
 .page-container {
-  max-width: 1500px;
+  width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,23 +38,18 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 0 auto;
+  padding: 0;
   background-color: Aquamarine; }
+  @media (max-width: 1499px) {
+    .page-container {
+      width: 1035px; } }
+  @media (max-width: 1034px) {
+    .page-container {
+      width: 100%; } }
 
-header {
-  height: 500px; }
-
-main {
+header, main {
   height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  width: 100vw; }
 
 body * {
   -webkit-box-sizing: border-box;
@@ -69,10 +65,10 @@ h1, h2, h3, ul, li, a {
   min-height: 500px; }
   .block--large {
     width: 1035px; }
-  .block--small {
-    width: 465px; }
   .block--middle {
     width: 570px; }
+  .block--small {
+    width: 465px; }
   .block--slim {
     min-height: 250px; }
 
@@ -132,6 +128,12 @@ h1, h2, h3, ul, li, a {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #7acec3; }
+  @media (max-width: 1499px) {
+    .info {
+      width: 570px; } }
+  @media (max-width: 1034px) {
+    .info {
+      width: 100%; } }
 
 .contacts {
   display: -webkit-box;
@@ -250,6 +252,21 @@ h1, h2, h3, ul, li, a {
     color: #ffffff;
     text-transform: uppercase; }
 
+@media (max-width: 1499px) {
+  .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 128px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    top: 170px;
+    left: 0; }
+    .navigation__list .navigation__item:nth-of-type(odd) {
+      margin: 10px 0; } }
+
 .sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +275,11 @@ h1, h2, h3, ul, li, a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 465px;
   background-color: #ebb240; }
+  @media (max-width: 1034px) {
+    .sort {
+      width: 100%; } }
 
 .sort__title {
   -webkit-box-ordinal-group: 3;
@@ -326,15 +347,27 @@ h1, h2, h3, ul, li, a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  background-color: red; }
+  @media (max-width: 1034px) {
+    .project-container {
+      width: 100%;
+      background: red; } }
 
 .project-card:last-child {
   margin-left: 570px;
   margin-top: -250px; }
+  @media (max-width: 1034px) {
+    .project-card:last-child {
+      margin-left: 0;
+      margin-top: 0; } }
 
 .project-card__inner-container {
   display: -webkit-box;
@@ -421,9 +454,7 @@ h1, h2, h3, ul, li, a {
   background-image: url("../images/lamp.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  max-width: 570px;
-  min-width: 465px; }
+  background-size: contain; }
   .project-card--fondue .project-card__inner-container {
     width: 225px;
     margin-left: 100px; }
@@ -443,7 +474,7 @@ h1, h2, h3, ul, li, a {
   background-image: url("../images/cook.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: contain; }
   .project-card--potter .project-card__inner-container {
     width: 150px;
     margin-left: 42px; }
@@ -467,10 +498,11 @@ h1, h2, h3, ul, li, a {
   background-image: url("../images/yellow-armchair.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: contain; }
   .project-card--fiji .project-card__inner-container {
     width: 155px;
-    margin-left: 245px; }
+    margin-left: auto;
+    margin-right: 65px; }
   .project-card--fiji .project-card__title {
     margin-top: 53px; }
   .project-card--fiji .project-card__info {
@@ -481,3 +513,13 @@ h1, h2, h3, ul, li, a {
   .project-card--fiji .project-card__like {
     margin-top: 25px;
     margin-left: 70px; }
+
+@media (max-width: 1034px) {
+  .project-card {
+    width: 100%; }
+    .project-card .project-card__inner-container {
+      margin-right: 0;
+      margin-left: 20%; }
+  .project-card:last-of-type .project-card__inner-container {
+    margin-right: 0;
+    margin-left: 60%; } }

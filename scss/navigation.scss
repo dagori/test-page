@@ -86,3 +86,17 @@
     text-transform: uppercase;
   }
 }
+
+@media #{$tablet-width} {
+  .navigation__list {
+    flex-direction: column;
+    width: $button-width;
+    height: min-content;
+    top: $navigation-top-padding + $button-height;
+    left: 0;
+    .navigation__item:nth-of-type(odd) {
+      margin: 10px 0;
+    }
+  }
+
+}

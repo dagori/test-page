@@ -1,15 +1,25 @@
 .project-container {
-  width: 1035px;
+  width: $large-width;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
+  background-color: red;
+  @media #{$mobile-width} {
+    width: 100%;
+    background: red;
+  }
 }
 
 .project-card:last-child {
   margin-left: $middle-width;
   margin-top: -$small-height;
+  @media #{$mobile-width} {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 .project-card__inner-container {
@@ -67,8 +77,6 @@
   background-color: $white-color;
   background-image: url('../images/lamp.png');
   @include background-image-parameter;
-  max-width: $middle-width;
-  min-width: $small-width;
   .project-card__inner-container {
     width: 225px;
     margin-left: 100px;
@@ -125,7 +133,9 @@
   @include background-image-parameter;
   .project-card__inner-container {
     width: 155px;
-    margin-left: 245px;
+  //  margin-left: 245px;
+    margin-left: auto;
+    margin-right: 65px;
   }
   .project-card__title {
     margin-top: 53px;
@@ -140,5 +150,21 @@
   .project-card__like {
     margin-top: 25px;
     margin-left: 70px;
+  }
+}
+
+@media #{$mobile-width} {
+  .project-card {
+    width: 100%;
+    .project-card__inner-container {
+      margin-right: 0;
+      margin-left: 20%;
+    }
+  }
+  .project-card:last-of-type {
+    .project-card__inner-container {
+      margin-right: 0;
+      margin-left: 60%;
+    }
   }
 }

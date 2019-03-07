@@ -3,6 +3,12 @@
   flex-direction: column;
   background-color: $green-color;
   @extend %diagonal;
+  @media #{$tablet-width} {
+    width: $middle-width;
+  }
+  @media #{$mobile-width} {
+    width: 100%;
+  }
 }
 
 .contacts {

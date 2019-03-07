@@ -1,8 +1,12 @@
 .sort {
   display: flex;
   flex-direction: column;
+  width: $small-width;
   background-color: $dark-orange-color;
   @extend %diagonal;
+  @media #{$mobile-width} {
+    width: 100%;
+  }
 }
 
 .sort__title {
