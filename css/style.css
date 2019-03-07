@@ -47,10 +47,6 @@ body {
     .page-container {
       width: 100%; } }
 
-header, main {
-  height: 50%;
-  width: 100vw; }
-
 body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
