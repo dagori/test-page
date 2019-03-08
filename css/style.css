@@ -39,7 +39,8 @@ body {
       width: 1035px; } }
   @media (max-width: 1034px) {
     .page-container {
-      width: 100%; } }
+      width: 100%;
+      min-width: 570px; } }
 
 body * {
   -webkit-box-sizing: border-box;
