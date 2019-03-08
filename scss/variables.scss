@@ -16,13 +16,8 @@ $small-height: 250px;
 
 $tablet-width: (max-width: $layout-width - 1);
 $mobile-width: (max-width: $large-width - 1);
+$tablet-only: (min-width: $large-width), (max-width: $tablet-width);
 
-/*
-.container {
-  width: 1500px;
-  height: 1000px;
-  margin: 0 auto;
-}*/
 /*//69-31% (1035 - 465)
 //31% - 38% - 31% (465 -570 - 465)
 

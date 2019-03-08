@@ -8,6 +8,9 @@
   }
   @media #{$mobile-width} {
     width: 100%;
+    min-height: 1px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -26,5 +29,22 @@
     width: 50%;
     padding-top: 110px;
     margin-left: -50px;
+  }
+}
+
+@media #{$mobile-width} {
+  .contacts {
+    width: $small-width / 2;
+  }
+  .contacts > * {
+    margin: 0;
+    padding: 0;
+  }
+  .contacts__address {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  .contacts__link {
+    align-self: center;
   }
 }

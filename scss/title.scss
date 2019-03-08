@@ -5,6 +5,11 @@
   background-size: cover;
   padding-left: 165px;
   padding-top: 50px;
+  transition: background-image .5s;
+  @media #{$mobile-width} {
+    background-image: url('../images/header-armchair.png');
+    background-position: center;
+  }
 }
 
 .logo__text {

@@ -4,9 +4,6 @@
   width: $small-width;
   background-color: $dark-orange-color;
   @extend %diagonal;
-  @media #{$mobile-width} {
-    width: 100%;
-  }
 }
 
 .sort__title {
@@ -48,5 +45,25 @@
 
   input:checked + label::after {
     @include arrow-after($white-color);
+  }
+}
+
+@media #{$mobile-width} {
+  .sort {
+    width: 100%;
+    min-height: 1px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sort__title {
+    margin: 20px 0 10px;
+    align-self: flex-end;
+  }
+
+  .sort__sorting {
+    align-self: flex-start;
+    margin: 20px 0 50px;
+    padding: 0;
   }
 }
