@@ -75,13 +75,10 @@
 
 .navigation__list {
   position: absolute;
-  top: $navigation-top-padding;
-  left: -680px;
   display: none;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 680px;
   height: $button-height;
   z-index: 10;
   background-color: $light-orange-color;
@@ -97,7 +94,7 @@
 @media #{$mobile-width} {
   .navigation__list {
     left: $button-width;
-    width: $small-width;
+    width: 400px;
     top: 20px;
   }
 }
@@ -112,5 +109,17 @@
     .navigation__item:nth-of-type(odd) {
       margin: 10px 0;
     }
+  }
+}
+
+@media #{$desktop-width} {
+  .navigation__list {
+    top: $navigation-top-padding;
+    left: -680px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 680px;
+    height: $button-height;
   }
 }

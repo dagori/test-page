@@ -16,6 +16,7 @@ $small-height: 250px;
 
 $tablet-width: (max-width: $layout-width - 1);
 $mobile-width: (max-width: $large-width - 1);
+$desktop-width: (min-width: $layout-width);
 $tablet-only: (min-width: $large-width), (max-width: $tablet-width);
 
 /*//69-31% (1035 - 465)
