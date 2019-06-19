@@ -51,7 +51,7 @@
 @media #{$mobile-width} {
   .sort {
     width: 100%;
-    min-height: 1px;
+    min-height: 230px;
     flex-direction: row;
     justify-content: space-around;
   }

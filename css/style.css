@@ -280,7 +280,7 @@ h1, h2, h3, ul, li, a {
 @media (max-width: 1034px) {
   .navigation__list {
     left: 128px;
-    width: 400px;
+    width: 390px;
     top: 20px; } }
 
 @media (min-width: 1035px), (max-width: (max-width: 1499px)) {
@@ -383,7 +383,7 @@ h1, h2, h3, ul, li, a {
 @media (max-width: 1034px) {
   .sort {
     width: 100%;
-    min-height: 1px;
+    min-height: 230px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -418,8 +418,7 @@ h1, h2, h3, ul, li, a {
       align-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  background-color: red; }
+          align-items: flex-start; }
   @media (max-width: 1034px) {
     .project-container {
       width: 100%;
